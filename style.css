@@ -1,0 +1,185 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#0f0f14;
+color:white;
+font-family:Poppins,sans-serif;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+h1{
+font-size:4rem;
+font-family:"Playfair Display";
+}
+
+.hero p{
+margin-top:15px;
+font-size:1.2rem;
+}
+
+button{
+margin-top:25px;
+padding:12px 25px;
+border:none;
+border-radius:15px;
+cursor:pointer;
+font-size:1rem;
+}
+
+section{
+padding:80px 10%;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+font-size:2rem;
+}
+
+.timeline{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+background:#1d1d27;
+padding:20px;
+border-radius:15px;
+width:250px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.reasons{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.reason{
+background:#1d1d27;
+padding:20px;
+border-radius:15px;
+text-align:center;
+}
+
+.poem{
+max-width:700px;
+margin:auto;
+line-height:2;
+text-align:center;
+background:#1d1d27;
+padding:30px;
+border-radius:15px;
+}
+
+#letter{
+display:none;
+max-width:700px;
+margin:auto;
+margin-top:30px;
+background:#1d1d27;
+padding:30px;
+border-radius:15px;
+line-height:1.8;
+}
+
+.end{
+height:50vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.stars{
+position:fixed;
+width:100%;
+height:100%;
+background:
+radial-gradient(white 1px,transparent 1px);
+background-size:40px 40px;
+opacity:.15;
+pointer-events:none;
+}
+
+#hearts-container {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.heart {
+    position: absolute;
+    font-size: 20px;
+    animation: floatUp linear forwards;
+    opacity: 0.8;
+    bottom: -50px;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.8;
+    }
+
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+gift-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.gift-image {
+    display: block;
+    width: min(90%, 500px);
+    height: auto;
+
+    margin: 30px auto;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.3);
+
+    transition: all 0.3s ease;
+}
+
+.gift-image:hover {
+    transform: scale(1.03);
+}
+
+.caption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+    opacity: 0.8;
+}
